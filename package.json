@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "docs": "jsdoc -c jsdoc.conf.json"
+    "docs": "jsdoc -c jsdoc.conf.json",
+    "dev": "vite"
   },
   "keywords": [],
   "author": "",
@@ -11,7 +12,9 @@
   "description": "",
   "dependencies": {},
   "devDependencies": {
+    "chokidar-cli": "^3.0.0",
     "clean-jsdoc-theme": "^4.3.0",
-    "jsdoc": "^4.0.4"
+    "jsdoc": "^4.0.4",
+    "vite": "^5.4.11"
   }
 }
