@@ -1,0 +1,21 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "source": {
+    "include": ["index.js"],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": [],
+  "opts": {
+    "template": "node_modules/clean-jsdoc-theme",
+    "destination": "./docs/",
+    "recurse": true
+  },
+  "templates": {
+    "theme": "dark",
+    "search": true,
+    "collapse": true
+  }
+}
