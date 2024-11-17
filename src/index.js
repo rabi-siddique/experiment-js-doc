@@ -38,7 +38,7 @@ const printObject = (obj) => {
 
 /**
  * Prints the elements of the array
- * @param {any[]} arr - Arra of any type
+ * @param {any[]} arr - Array of any type
  * @example
  * // Example Usage
  * const numbers = [1, 2, 3]
