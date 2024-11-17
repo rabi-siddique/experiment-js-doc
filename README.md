@@ -8,7 +8,7 @@ JS Doc is a documentation syntax used to add comments directly into JavaScript c
 
 JSDoc comments are written inside `/** ... */` and typically placed above the element being documented.
 
-```bash
+```javascript
 /**
  * A simple function to add two numbers.
  * @param {number} a - The first number.
@@ -18,7 +18,6 @@ JSDoc comments are written inside `/** ... */` and typically placed above the el
 function add(a, b) {
   return a + b;
 }
-
 ```
 
 # Common Tags
@@ -27,88 +26,83 @@ Here are some frequently used JSDoc tags:
 
 - `@param`: Describes function parameters.
 
-  ```bash
+  ```javascript
   /**
-  * Multiplies two numbers.
-  * @param {number} x - The first number.
-  * @param {number} y - The second number.
-  * @returns {number} The product of the numbers.
-  */
+   * Multiplies two numbers.
+   * @param {number} x - The first number.
+   * @param {number} y - The second number.
+   * @returns {number} The product of the numbers.
+   */
   function multiply(x, y) {
-  return x * y;
+    return x * y;
   }
-
   ```
 
 - `@returns`: Describes the function's return value.
 
-  ```bash
+  ```javascript
   /**
-  * Concatenates two strings.
-  * @param {string} str1 - The first string.
-  * @param {string} str2 - The second string.
-  * @returns {string} The concatenated result.
-  */
+   * Concatenates two strings.
+   * @param {string} str1 - The first string.
+   * @param {string} str2 - The second string.
+   * @returns {string} The concatenated result.
+   */
   function concat(str1, str2) {
-  return str1 + str2;
+    return str1 + str2;
   }
-
   ```
 
 - `@typedef`: Defines custom types.
 
-  ```bash
+  ```javascript
   /**
-  * @typedef {Object} User
-  * @property {string} name - The user's name.
-  * @property {number} age - The user's age.
-  */
+   * @typedef {Object} User
+   * @property {string} name - The user's name.
+   * @property {number} age - The user's age.
+   */
 
   /**
-  * Logs user details.
-  * @param {User} user - The user object.
-  */
+   * Logs user details.
+   * @param {User} user - The user object.
+   */
   function logUser(user) {
-  console.log(`${user.name}, ${user.age}`);
+    console.log(`${user.name}, ${user.age}`);
   }
-
   ```
 
 - `@example`: Adds code examples.
 
-  ```bash
+  ```javascript
   /**
-  * Adds an item to an array.
-  * @param {any[]} array - The array to modify.
-  * @param {any} item - The item to add.
-  * @returns {any[]} The updated array.
-  * @example
-  * // Example usage:
-  * const numbers = [1, 2];
-  * addItem(numbers, 3); // [1, 2, 3]
-  */
+   * Adds an item to an array.
+   * @param {any[]} array - The array to modify.
+   * @param {any} item - The item to add.
+   * @returns {any[]} The updated array.
+   * @example
+   * // Example usage:
+   * const numbers = [1, 2];
+   * addItem(numbers, 3); // [1, 2, 3]
+   */
   function addItem(array, item) {
-  array.push(item);
-  return array;
+    array.push(item);
+    return array;
   }
-
   ```
 
 - `@throws`: Indicates errors the function may throw.
 
-  ```bash
+  ```javascript
   /**
-  * Divides two numbers.
-  * @param {number} numerator - The numerator.
-  * @param {number} denominator - The denominator.
-  * @returns {number} The division result.
-  * @throws {Error} If the denominator is zero.
-  */
+   * Divides two numbers.
+   * @param {number} numerator - The numerator.
+   * @param {number} denominator - The denominator.
+   * @returns {number} The division result.
+   * @throws {Error} If the denominator is zero.
+   */
   function divide(numerator, denominator) {
-  if (denominator === 0) {
+    if (denominator === 0) {
       throw new Error('Cannot divide by zero');
+    }
+    return numerator / denominator;
   }
-  return numerator / denominator;
-  }
-
   ```
